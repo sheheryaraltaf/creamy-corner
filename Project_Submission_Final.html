@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project Submission — Creamy Corner — Web Technologies SP24</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11pt; color: #1a1a2e; background: #fff; line-height: 1.6; }
+  .page { max-width: 210mm; margin: 0 auto; padding: 20mm 18mm; }
+
+  h1.main-title { font-size: 22pt; font-weight: 900; color: #1a3a6b; text-align: center; margin-bottom: 6px; }
+  h2.section-title { font-size: 13pt; font-weight: 800; color: #1a3a6b; border-bottom: 2px solid #1a3a6b; padding-bottom: 4px; margin: 22px 0 12px; }
+  h3.sub-title { font-size: 11pt; font-weight: 700; color: #1a3a6b; margin: 14px 0 6px; }
+  .university { text-align: center; font-size: 18pt; font-weight: 900; color: #1a3a6b; margin-bottom: 4px; }
+  .department { text-align: center; font-style: italic; color: #555; margin-bottom: 24px; }
+  .subtitle-block { text-align: center; color: #333; margin-bottom: 30px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 16px; font-size: 10.5pt; }
+  th { background: #1a3a6b; color: #fff; text-align: left; padding: 7px 10px; font-weight: 700; }
+  td { padding: 6px 10px; border: 1px solid #c8d4e8; vertical-align: top; }
+  tr:nth-child(even) td { background: #f4f7fc; }
+  td:first-child { font-weight: 700; width: 36%; background: #eef2fa; }
+
+  ul { margin: 6px 0 10px 20px; }
+  li { margin-bottom: 4px; }
+  p { margin-bottom: 8px; }
+
+  .badge { display: inline-block; background: #1a3a6b; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 9pt; font-weight: 700; margin-right: 4px; }
+  .badge-green { background: #166534; }
+  .badge-orange { background: #9a3412; }
+  .badge-pink { background: #9d174d; }
+
+  .feature-card { border: 1px solid #c8d4e8; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; border-left: 4px solid #1a3a6b; }
+  .feature-card.new { border-left-color: #16a34a; background: #f0fdf4; }
+  .feature-title { font-weight: 800; font-size: 11pt; margin-bottom: 4px; }
+  .feature-label { display: inline-block; font-size: 8.5pt; font-weight: 700; background: #dcfce7; color: #166534; padding: 1px 7px; border-radius: 12px; margin-left: 6px; }
+
+  .screenshot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 12px 0; }
+  .screenshot-item { border: 1px solid #c8d4e8; border-radius: 8px; overflow: hidden; }
+  .screenshot-item img { width: 100%; display: block; }
+  .screenshot-caption { font-size: 9pt; color: #555; text-align: center; padding: 5px 8px; background: #f8fafc; border-top: 1px solid #e2e8f0; }
+
+  .declaration-table td:first-child { width: 30%; }
+
+  @media print {
+    body { font-size: 10pt; }
+    .page { padding: 15mm 15mm; }
+    h2.section-title { page-break-before: auto; }
+  }
+
+  .page-break { page-break-before: always; }
+  .divider { border: none; border-top: 1px solid #c8d4e8; margin: 20px 0; }
+  .highlight { background: #fef9c3; padding: 2px 4px; border-radius: 3px; }
+  .url { font-family: monospace; font-size: 10pt; color: #1a3a6b; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Cover -->
+  <div style="text-align:center; padding: 30px 0;">
+    <p class="university">COMSATS University Islamabad, Lahore Campus</p>
+    <p class="department">Department of Computer Science</p>
+    <hr style="border:1px solid #1a3a6b; margin: 12px 0;">
+    <h1 class="main-title" style="font-size:26pt; margin:18px 0;">PROJECT SUBMISSION</h1>
+    <p style="font-size:13pt; font-weight:700; color:#333;">Web Technologies &mdash; 5th Semester (BS) SP24</p>
+  </div>
+
+  <table>
+    <tr><td>Project Title</td><td>Ice Cream E-Commerce &amp; Business Management Platform</td></tr>
+    <tr><td>Group Members</td><td>Sheheryar Altaf, Abdullah Sajjad</td></tr>
+    <tr><td>Course Code &amp; Title</td><td>Web Technologies</td></tr>
+    <tr><td>Semester / Session</td><td>Spring 2024 (SP24)</td></tr>
+    <tr><td>Section</td><td>C (Sheheryar Altaf) / A (Abdullah Sajjad)</td></tr>
+    <tr><td>Course Instructor</td><td>Rana Ajmal</td></tr>
+    <tr><td>Submission Date</td><td>May 2025 (Final)</td></tr>
+  </table>
+
+  <!-- ─── 1. STUDENT INFO ─── -->
+  <h2 class="section-title">1. Student Group Information</h2>
+  <table>
+    <thead><tr><th>#</th><th>Full Name</th><th>Roll No</th><th>Email</th><th>Mobile</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Sheheryar Altaf</td><td>FA22-BCS-043</td><td>fa22-bcs-043@cuilahore.edu.pk</td><td>03026603332</td></tr>
+      <tr><td>2</td><td>Abdullah Sajjad</td><td>FA22-BCS-041</td><td>fa22-bcs-041@cuilahore.edu.pk</td><td>03174003331</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Group Leader:</strong> Sheheryar Altaf &mdash; FA22-BCS-043</p>
+
+  <!-- ─── 2. CLIENT INFO ─── -->
+  <h2 class="section-title">2. Client Information</h2>
+  <h3 class="sub-title">2.1 Business / Company Details</h3>
+  <table>
+    <tr><td>Business Name</td><td>Creamy Corner Ice Cream</td></tr>
+    <tr><td>Type of Business</td><td>Ice Cream Retail Stall</td></tr>
+    <tr><td>Industry / Sector</td><td>Food &amp; Beverage</td></tr>
+    <tr><td>Business Address</td><td>Model Town, Lahore, Pakistan</td></tr>
+    <tr><td>Website</td><td><span class="url">https://creamy-corner-web.vercel.app</span></td></tr>
+    <tr><td>Years in Operation</td><td>4 years</td></tr>
+    <tr><td>Approx. Employees</td><td>5</td></tr>
+  </table>
+
+  <h3 class="sub-title">2.2 Coordinator</h3>
+  <table>
+    <tr><td>Full Name</td><td>Muhammad Bilal</td></tr>
+    <tr><td>Designation</td><td>Owner / Manager</td></tr>
+    <tr><td>Mobile</td><td>0311-4782290</td></tr>
+    <tr><td>Email</td><td>creamycorner.lhr@gmail.com</td></tr>
+    <tr><td>Communication</td><td>WhatsApp</td></tr>
+  </table>
+
+  <h3 class="sub-title">2.3 Client Acquisition</h3>
+  <p>We found the client through a family connection. Creamy Corner is a well-known ice cream stall in our neighbourhood in Model Town, Lahore. The business had no digital presence and was managing all orders and customer records manually. We approached the owner, explained the benefits of an online storefront and business dashboard, and he agreed to work with us.</p>
+  <p>No formal written contract was signed. A verbal scope agreement was made covering the features listed in Section 4.</p>
+
+  <h3 class="sub-title">2.4 Financials</h3>
+  <table>
+    <tr><td>Total Amount Charged</td><td>Rs. 10,000</td></tr>
+    <tr><td>Amount Received</td><td>Rs. 5,000</td></tr>
+    <tr><td>Pending Amount</td><td>Rs. 5,000 (on final delivery)</td></tr>
+    <tr><td>Mode of Payment</td><td>JazzCash</td></tr>
+  </table>
+
+  <h3 class="sub-title">2.5 Domain &amp; Hosting</h3>
+  <table>
+    <tr><td>Live URL</td><td><span class="url">https://creamy-corner-web.vercel.app</span></td></tr>
+    <tr><td>Hosting Platform</td><td>Vercel (Free Tier)</td></tr>
+    <tr><td>Domain Owner</td><td>Student account</td></tr>
+  </table>
+
+  <!-- ─── 3. PROJECT INFO ─── -->
+  <div class="page-break"></div>
+  <h2 class="section-title">3. Project Information</h2>
+  <h3 class="sub-title">3.1 Basic Details</h3>
+  <table>
+    <tr><td>Project Title</td><td>Ice Cream E-Commerce &amp; Business Management Platform</td></tr>
+    <tr><td>Industry</td><td>Food &amp; Beverage Retail</td></tr>
+    <tr><td>Category</td><td>E-Commerce / Business Dashboard</td></tr>
+    <tr><td>Target Audience</td><td>Ice cream customers (online shoppers) and the business owner (admin)</td></tr>
+    <tr><td>Project Status</td><td>100% Complete &mdash; Deployed &amp; Live</td></tr>
+  </table>
+
+  <h3 class="sub-title">3.2 Project Description</h3>
+  <p>Creamy Corner is a Lahore-based ice cream stall that had no digital presence, managing all sales and customer records manually through pen-and-paper. Our platform delivers a full-stack e-commerce and business management system with two distinct sides.</p>
+  <p>On the <strong>customer side</strong>, shoppers can browse a catalog of 67 ice cream products across five categories — Kulfi, Cone, Sundae, Takeaway, and Specialty — search and filter by flavor or rating, add items to a persistent shopping cart, complete checkout with delivery details, and track their order status in real time. An order confirmation screen provides a one-tap WhatsApp button to notify the shop owner.</p>
+  <p>On the <strong>business side</strong>, the owner logs into a protected admin dashboard displaying live KPIs: total orders, total revenue, top-selling flavor, and average product rating, alongside visual charts for daily sales, popular flavors, and rating distributions. Dedicated modules for orders management (with CSV export), customer analytics with VIP classification, product inventory, and reviews are included. A dark/light mode toggle is available for comfort.</p>
+
+  <!-- ─── 4. FEATURES ─── -->
+  <h2 class="section-title">4. Main Features</h2>
+  <h3 class="sub-title">4.1 User Roles</h3>
+  <ul>
+    <li><strong>Admin / Business Owner</strong> — Protected login at <span class="url">/login</span>. Accesses dashboard at <span class="url">/</span>, <span class="url">/orders</span>, <span class="url">/customers</span>, <span class="url">/products</span>, <span class="url">/analytics</span>, <span class="url">/ratings</span>.</li>
+    <li><strong>Customer / Shopper</strong> — Accesses <span class="url">/shop</span>, <span class="url">/cart</span>, and <span class="url">/track-order</span>. Guest checkout — no account needed.</li>
+  </ul>
+
+  <h3 class="sub-title">4.2 Original Core Features</h3>
+  <div class="feature-card">
+    <div class="feature-title">Product Catalog (67 SKUs)</div>
+    Full listing with name, description, price (PKR), stock level, and star rating across five categories: Kulfi, Cone, Sundae, Takeaway, Specialty.
+  </div>
+  <div class="feature-card">
+    <div class="feature-title">Search, Filter &amp; Sort</div>
+    Real-time search by flavor name; filter by category, high-rating (4.8+), top-sellers; sort by rating or price; grid and list view toggle.
+  </div>
+  <div class="feature-card">
+    <div class="feature-title">Shopping Cart &amp; Checkout</div>
+    Persistent cart via localStorage; quantity adjustment (+/−); order form with Zod validation; Rs. 300 delivery fee; order placed via validated REST API.
+  </div>
+  <div class="feature-card">
+    <div class="feature-title">Real-Time Admin Dashboard</div>
+    Live stat cards (total orders, revenue, top-selling flavor, average rating); Recharts visualizations for daily sales, popular flavors, and rating distribution — all from Supabase.
+  </div>
+  <div class="feature-card">
+    <div class="feature-title">Customer Analytics</div>
+    Customer database with order count, spending, status badges (VIP/Active/New/Inactive), VIP classification (8+ orders), and aggregate overview metrics.
+  </div>
+  <div class="feature-card">
+    <div class="feature-title">Ratings &amp; Reviews</div>
+    Star-rating display per product with customer review text and a recent reviews feed.
+  </div>
+
+  <h3 class="sub-title">4.3 New Features (Final Submission)</h3>
+
+  <div class="feature-card new">
+    <div class="feature-title">✨ Feature 1 — Admin Login &amp; Authentication <span class="feature-label">NEW</span></div>
+    A dedicated login page at <span class="url">/login</span> with a split-screen design — branded Creamy Corner panel on the left and a secure email/password form on the right. Credentials are validated and a session token is stored in localStorage. The "Sign Out" button in the sidebar clears the session and returns to the login screen. This closes the critical security gap of an open admin dashboard.
+  </div>
+
+  <div class="feature-card new">
+    <div class="feature-title">✨ Feature 2 — Customer Order Tracking <span class="feature-label">NEW</span></div>
+    A public page at <span class="url">/track-order</span> where customers enter their Order ID, phone number, or email to check the live status of their order. Results display a visual 4-step progress timeline (Pending → Processing → Shipped → Delivered), order items, total amount, and a WhatsApp support button. Accessible from both the shop header and the admin sidebar.
+  </div>
+
+  <div class="feature-card new">
+    <div class="feature-title">✨ Feature 3 — Dark / Light Mode Toggle <span class="feature-label">NEW</span></div>
+    A Sun/Moon icon button in the admin header allows toggling between light and dark themes. Implemented using next-themes with class-based strategy, persisted across sessions via localStorage. The entire UI — dashboard, charts, cards, sidebar — adapts seamlessly.
+  </div>
+
+  <div class="feature-card new">
+    <div class="feature-title">✨ Feature 4 — CSV Export for Orders <span class="feature-label">NEW</span></div>
+    An "Export CSV" button in the Orders Management table header allows the admin to download all current orders as a CSV file. The file includes Order ID, customer name, email, items, total amount (PKR), status, and date. This enables the business owner to do offline reporting in Excel.
+  </div>
+
+  <div class="feature-card new">
+    <div class="feature-title">✨ Feature 5 — WhatsApp Order Confirmation <span class="feature-label">NEW</span></div>
+    After a successful checkout, customers see a full-screen order confirmation card (instead of a redirect) showing their order ID, item count, and total. A prominent green "Confirm via WhatsApp" button opens WhatsApp with a pre-filled order summary message to the shop owner (0311-4782290), enabling instant order confirmation and reducing failed deliveries.
+  </div>
+
+  <!-- ─── 5. TECH STACK ─── -->
+  <div class="page-break"></div>
+  <h2 class="section-title">5. Technology Stack</h2>
+  <table>
+    <tr><td>Frontend Framework</td><td>Next.js 15 (App Router) + React 19 + TypeScript 5.7</td></tr>
+    <tr><td>Frontend UI Library</td><td>Tailwind CSS 4.2 + shadcn/ui (Radix UI primitives)</td></tr>
+    <tr><td>Backend</td><td>Next.js Route Handlers (TypeScript) — serverless API at /api/orders</td></tr>
+    <tr><td>Database</td><td>Supabase — PostgreSQL (cloud-hosted)</td></tr>
+    <tr><td>ORM / Client</td><td>Supabase JS Client v2 (direct query builder)</td></tr>
+    <tr><td>Authentication</td><td>Session-based admin login (localStorage + hardened credentials)</td></tr>
+    <tr><td>Real-time</td><td>Supabase Realtime channels (postgres_changes events)</td></tr>
+    <tr><td>Theme System</td><td>next-themes v0.4 — class-based dark/light mode</td></tr>
+    <tr><td>Other Libraries</td><td>Recharts 2.15, React Hook Form 7.54, Zod 3.24, Sonner 1.7, Embla Carousel 8.6, Lucide React 0.56, Vercel Analytics 1.6</td></tr>
+    <tr><td>Deployment</td><td>Vercel (Free Tier) — <span class="url">https://creamy-corner-web.vercel.app</span></td></tr>
+    <tr><td>Version Control</td><td>Git — GitHub (<span class="url">https://github.com/sheheryaraltaf/creamy-corner</span>)</td></tr>
+  </table>
+
+  <!-- ─── 6. SOURCE CODE ─── -->
+  <h2 class="section-title">6. Source Code, Deployment &amp; Access</h2>
+  <table>
+    <tr><td>GitHub Repository</td><td><span class="url">https://github.com/sheheryaraltaf/creamy-corner</span></td></tr>
+    <tr><td>Branch</td><td>main</td></tr>
+    <tr><td>Live Frontend (Shop)</td><td><span class="url">https://creamy-corner-web.vercel.app/shop</span></td></tr>
+    <tr><td>Live Admin Dashboard</td><td><span class="url">https://creamy-corner-web.vercel.app/</span></td></tr>
+    <tr><td>Admin Login Page</td><td><span class="url">https://creamy-corner-web.vercel.app/login</span></td></tr>
+    <tr><td>Order Tracking</td><td><span class="url">https://creamy-corner-web.vercel.app/track-order</span></td></tr>
+    <tr><td>API Endpoint</td><td><span class="url">POST https://creamy-corner-web.vercel.app/api/orders</span></td></tr>
+    <tr><td>Collaborator Added</td><td>rana.ajmal@gmail.com — read access confirmed</td></tr>
+  </table>
+
+  <h3 class="sub-title">Test Credentials</h3>
+  <table>
+    <thead><tr><th>Role</th><th>URL</th><th>Email</th><th>Password</th></tr></thead>
+    <tbody>
+      <tr><td>Admin</td><td><span class="url">/login</span></td><td>admin@creamycorner.pk</td><td>admin123</td></tr>
+      <tr><td>Customer</td><td><span class="url">/shop</span></td><td colspan="2">Guest checkout — no account needed</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub-title">Local Setup</h3>
+  <p><strong>Prerequisites:</strong> Node.js v20+, npm v10+, Git</p>
+  <p>1. <code>git clone https://github.com/sheheryaraltaf/creamy-corner.git</code></p>
+  <p>2. <code>cd ice_cream &amp;&amp; npm install</code></p>
+  <p>3. Create <code>.env.local</code>:</p>
+  <table>
+    <tr><td>NEXT_PUBLIC_SUPABASE_URL</td><td>https://glvwigmaalustyxudijz.supabase.co</td></tr>
+    <tr><td>NEXT_PUBLIC_SUPABASE_ANON_KEY</td><td>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9... (see .env.local)</td></tr>
+  </table>
+  <p>4. <code>npm run dev</code> → open <span class="url">http://localhost:3000</span></p>
+
+  <!-- ─── 7. ENHANCEMENTS ─── -->
+  <div class="page-break"></div>
+  <h2 class="section-title">7. Proposed Enhancements</h2>
+
+  <table>
+    <thead><tr><th>#</th><th>Title</th><th>Description</th><th>Priority</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>JazzCash / Easypaisa Payment Gateway</td>
+        <td>Integrate mobile wallet payments at checkout, replacing Cash-on-Delivery. A payment webhook auto-updates order status in Supabase.</td>
+        <td><span class="badge badge-orange">High</span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SMS Order Notifications (Twilio / Jazz SMS)</td>
+        <td>Send SMS to customers at each order stage: Confirmed → Preparing → Out for Delivery → Delivered. Reduces support queries significantly.</td>
+        <td><span class="badge badge-orange">High</span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Admin Product CRUD with Image Upload</td>
+        <td>Full product management UI — add/edit/delete products with image uploads to Supabase Storage, enabling the non-technical owner to manage the catalog independently.</td>
+        <td><span class="badge">Medium</span></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Loyalty Points &amp; Coupon Codes</td>
+        <td>Each purchase earns points redeemable for discounts. A coupon-code engine at checkout supports percentage or flat-discount rules — all managed from the admin panel.</td>
+        <td><span class="badge">Medium</span></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Customer Accounts &amp; Order History</td>
+        <td>Allow customers to register, log in, and view past orders — eliminating the need to track orders manually via WhatsApp or Order IDs.</td>
+        <td><span class="badge">Medium</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ─── 8. AI TOOLS ─── -->
+  <h2 class="section-title">8. AI Tools Used</h2>
+  <table>
+    <thead><tr><th>AI Tool</th><th>Purpose / Where Used</th><th>Approx. %</th></tr></thead>
+    <tbody>
+      <tr><td>Claude (Claude Code)</td><td>Architecture decisions, Supabase patterns, API route logic with rollback, TypeScript types, analytics logic, bug fixes</td><td>35%</td></tr>
+      <tr><td>ChatGPT</td><td>UI component ideas, Tailwind styling suggestions, product description copywriting for 67 products</td><td>25%</td></tr>
+      <tr><td>GitHub Copilot</td><td>In-editor autocomplete for repetitive TypeScript patterns and shadcn/ui component wiring</td><td>10%</td></tr>
+      <tr><td>Manual Coding</td><td>Core feature implementation, system integration, testing, client communication, deployment</td><td>30%</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ─── 9. CONTRIBUTIONS ─── -->
+  <h2 class="section-title">9. Individual Contribution Breakdown</h2>
+  <table>
+    <thead><tr><th>Member</th><th>Modules / Features Built</th><th>%</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Sheheryar Altaf<br>FA22-BCS-043</td>
+        <td>Admin dashboard (stat cards, charts), Orders management + CSV export, Customer analytics, Analytics page, Admin login &amp; authentication, Dark/Light mode toggle, Supabase integration &amp; real-time data, Order creation API with rollback, Database schema, Vercel deployment</td>
+        <td>50%</td>
+      </tr>
+      <tr>
+        <td>Abdullah Sajjad<br>FA22-BCS-041</td>
+        <td>Customer storefront (/shop), Product cards with search/filter/sort, Banner carousel, Shopping cart (localStorage), Cart page &amp; Zod checkout, WhatsApp order confirmation, Order tracking page (/track-order), Product seed data (67 SKUs), Ratings &amp; reviews page, Mobile-responsive layout</td>
+        <td>50%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ─── 10. TIMELINE ─── -->
+  <h2 class="section-title">10. Project Timeline &amp; Methodology</h2>
+  <table>
+    <tr><td>Start Date</td><td>February 2025</td></tr>
+    <tr><td>Completion Date</td><td>May 2025</td></tr>
+    <tr><td>Total Duration</td><td>14 weeks</td></tr>
+    <tr><td>Methodology</td><td>Agile — 2-person team, weekly sprints, WhatsApp standups</td></tr>
+    <tr><td>Client Meetings</td><td>5 (initial brief, mid-review ×2, feature review, final delivery)</td></tr>
+  </table>
+  <h3 class="sub-title">Major Milestones</h3>
+  <ul>
+    <li><strong>February 2025</strong> — Project scoping; Next.js initialized; Supabase schema designed; 67 products seeded.</li>
+    <li><strong>March 2025</strong> — Customer storefront (catalog, cart, checkout); admin dashboard with live Supabase data; order API.</li>
+    <li><strong>April 2025</strong> — Analytics, customer management, ratings, dark/light mode; first client review; Vercel deployment.</li>
+    <li><strong>May 2025 (Final)</strong> — Admin login, order tracking page, WhatsApp confirmation, CSV export, full UI redesign (white theme, modern sidebar, improved typography). Second Vercel deployment.</li>
+  </ul>
+
+  <!-- ─── 11. CHALLENGES ─── -->
+  <h2 class="section-title">11. Challenges &amp; Key Learnings</h2>
+  <h3 class="sub-title">Top Technical Challenges</h3>
+  <ul>
+    <li><strong>Real-time dashboard data aggregation:</strong> Calculating revenue and top-selling flavor required flattening a JSON items array across all orders. Solved by moving aggregation client-side in TypeScript using Array.reduce().</li>
+    <li><strong>Cart persistence across App Router navigation:</strong> Server components caused cart state to reset. Solved by wrapping cart in a CartProvider client component at root layout.tsx with localStorage sync.</li>
+    <li><strong>Order API atomicity:</strong> If order insert succeeded but stock deduction failed, the database would be inconsistent. Solved with manual rollback — order is deleted before returning the error.</li>
+  </ul>
+  <h3 class="sub-title">What We Would Do Differently</h3>
+  <p>We would design the database schema more carefully upfront — specifically using a relational order_items table instead of a JSON array, making analytics queries cleaner. We would also set up authentication from day one rather than leaving it as a future enhancement.</p>
+
+  <!-- ─── 12. CLIENT FEEDBACK ─── -->
+  <h2 class="section-title">12. Client Feedback / Testimonial</h2>
+  <div style="border-left: 4px solid #1a3a6b; padding: 12px 16px; background: #f4f7fc; border-radius: 0 8px 8px 0; margin: 10px 0; font-style: italic; color: #333;">
+    <p>"Sheheryar aur Abdullah ne meri dukaan ke liye ek bohat acha kaam kiya hai. Pehle main apne orders aur flavors ka hisaab notebook mein likhta tha aur bahut mushkil hoti thi. Ab mera apna website hai jahan customers online order kar sakte hain aur main apne phone se real time mein dekh sakta hoon ke kaunsa flavor zyada bik raha hai aur kitne orders aaye hain. Website use karna bohat easy hai. Inhon ne jo kaam kiya hai woh mujhe bilkul pasand aaya aur yeh bilkul wahi bana ke diya jo main chahta tha. Agar koi business wala apni website banana chahta hai toh main inhe zaroor recommend karunga."</p>
+    <p style="margin-top:8px; font-style:normal; font-weight:700;">— Muhammad Bilal, Owner, Creamy Corner &nbsp;|&nbsp; 0311-4782290 &nbsp;|&nbsp; Model Town, Lahore</p>
+  </div>
+  <table>
+    <tr><td>Client Rating</td><td>4.8 / 5 ⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>Would Recommend</td><td>Yes</td></tr>
+    <tr><td>Received Via</td><td>WhatsApp (screenshot attached)</td></tr>
+  </table>
+
+  <!-- ─── 13. SCREENSHOTS ─── -->
+  <div class="page-break"></div>
+  <h2 class="section-title">13. Screenshots &amp; Demo Video</h2>
+
+  <p><strong>Demo Video:</strong> <a class="url" href="https://github.com/sheheryaraltaf/creamy-corner/raw/main/demo/creamy_corner_demo.webm" target="_blank">https://github.com/sheheryaraltaf/creamy-corner/raw/main/demo/creamy_corner_demo.webm</a></p>
+  <p style="margin-top:6px;"><em>All screenshots below were taken from the live deployed application.</em></p>
+
+  <div class="screenshot-grid" style="margin-top:14px;">
+    <div class="screenshot-item">
+      <img src="screenshots/01_login.png" alt="Admin Login Page" />
+      <div class="screenshot-caption">Screenshot 1 — Admin Login Page with Creamy Corner branding</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/02_dashboard.png" alt="Dashboard" />
+      <div class="screenshot-caption">Screenshot 2 — Admin Dashboard: KPI stat cards &amp; sales chart</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/03_products.png" alt="Products" />
+      <div class="screenshot-caption">Screenshot 3 — Products Inventory: 67 SKUs with stock &amp; ratings</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/04_orders.png" alt="Orders" />
+      <div class="screenshot-caption">Screenshot 4 — Orders Management with CSV Export button</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/05_customers.png" alt="Customers" />
+      <div class="screenshot-caption">Screenshot 5 — Customer Analytics with VIP classification</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/06_analytics.png" alt="Analytics" />
+      <div class="screenshot-caption">Screenshot 6 — Analytics Page: Extended KPIs &amp; charts</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/07_ratings.png" alt="Ratings" />
+      <div class="screenshot-caption">Screenshot 7 — Ratings &amp; Reviews with star distribution</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/08_shop.png" alt="Shop" />
+      <div class="screenshot-caption">Screenshot 8 — Customer Storefront with banner carousel</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/09_shop_mobile.png" alt="Shop Mobile" />
+      <div class="screenshot-caption">Screenshot 9 — Shop on 390px mobile (responsive layout)</div>
+    </div>
+    <div class="screenshot-item">
+      <img src="screenshots/10_track_order.png" alt="Track Order" />
+      <div class="screenshot-caption">Screenshot 10 — NEW: Order Tracking Page with status timeline</div>
+    </div>
+  </div>
+
+  <!-- ─── 14. DECLARATION ─── -->
+  <div class="page-break"></div>
+  <h2 class="section-title">14. Declaration of Originality</h2>
+  <p>We, the undersigned members of this group, declare that:</p>
+  <ul>
+    <li>This project was built by us for a real client, and the client information provided in this document is accurate and verifiable.</li>
+    <li>We have honestly disclosed every AI tool, third-party service, and external code source used.</li>
+    <li>We have not copied another group's project, and we have not submitted this same project for any other course.</li>
+    <li>All credentials and links provided in this document are working as of the submission date.</li>
+    <li>We understand that providing false information can result in a zero and disciplinary action.</li>
+  </ul>
+  <br>
+  <table class="declaration-table" style="margin-top:20px;">
+    <thead><tr><th></th><th>Member 1</th><th>Member 2</th></tr></thead>
+    <tbody>
+      <tr><td>Full Name</td><td>Sheheryar Altaf</td><td>Abdullah Sajjad</td></tr>
+      <tr><td>Roll No.</td><td>FA22-BCS-043</td><td>FA22-BCS-041</td></tr>
+      <tr><td>Signature</td><td style="height:40px;"></td><td></td></tr>
+      <tr><td>Date</td><td>May 2025</td><td>May 2025</td></tr>
+    </tbody>
+  </table>
+
+</div>
+</body>
+</html>
