@@ -1,5 +1,5 @@
 # 🍦 Ice Cream E-Commerce Platform
-
+video link : https://drive.google.com/file/d/1xmHvTLpyyd_moHO-SEmStPbdErgJuPq3/view?usp=sharing
 A modern, full-stack ice cream e-commerce application built with **Next.js**, **React**, **TypeScript**, **Supabase**. Features live dashboard with customer insights normalized to 1-10 orders, Rs200-2500 spent.
 
 ## Quick Start
@@ -20,7 +20,6 @@ npm run dev
 - New customer order → total orders +1, revenue +total, avg recalculated, flavor counts +qty
 - Realtime across stat-cards, sales-chart, flavors-chart
 
-View: http://localhost:3001/analytics
 
 ## Setup
 1. Supabase project, copy URL/Anon Key to .env.local
